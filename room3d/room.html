@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color:gray">
+        <a-camera wasd-controls-enabled="true" position="0 8 20">
+        </a-camera>
+        <!-------------------------------------------Asset Management------------------------------------------->
+        <a-assests>
+            <a-asset-item id="table-mtl" src="./models/table/obj.mtl"> 
+            <a-asset-item id="table-obj" src="./models/table/tinker.obj">
+            <a-asset-item id="table-gltf" src="./models/table/table.gltf">
+
+        </a-assests>
+        <!-------------------------------------Circular Plane----------------------------------------------->
+        <a-circle id="floor" position="-0.4 -0.76 -25" rotation="-90 0 0" radius="100" shadow="receive: true"
+            visible="true" color="white"> </a-circle>
+        <!-------------------------------------Room Walls----------------------------------------------->
+        <a-entity>
+            <!--BACK-->
+            <a-box color="blue" position="0.076 -4 -39" width="50" height="50"> </a-box>
+            <!--RIGHT-->
+            <a-box color="orange" rotation="0 -90 0" position="25.5 -2.9 -15" width="50" height="50"> </a-box>
+            <!--LEFT-->
+            <a-box color="orange" rotation="0 -90 0" position="-25.9 -3.4 -15" width="50" height="50"> </a-box>
+            <!--TOP-->
+            <a-box color="white" rotation="90 0 0" position="0 21.4 -15" width="50" height="50"> </a-box>
+        </a-entity>
+        <!--------------------------------------OBJ Models----------------------------------------------------------->
+        <a-entity obj-model="obj: #table-obj; mtl: #table-mtl" position="5 0 0" rotation="-90 -40 0"
+            scale="0.1 0.1 0.1 "></a-entity>
+
+    </a-scene>
+</body>
+
+</html>

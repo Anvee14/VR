@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mythical Fox Queen
+* source:	https://sketchfab.com/3d-models/mythical-fox-queen-ca30828709fb47c3ad80a01b3b77dcc7
+* author:	AVINAS (https://sketchfab.com/AVINAS)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mythical Fox Queen" (https://sketchfab.com/3d-models/mythical-fox-queen-ca30828709fb47c3ad80a01b3b77dcc7) by AVINAS (https://sketchfab.com/AVINAS) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="movePosition.js"></script>
+
+</head>
+<body>
+    <a-scene background="color:black">
+        <a-camera wasd-controls-enabled="false" position="0 1.6 0" camera-zoom-out>
+
+        </a-camera>
+<a-entity id="rocket" position="0 5 0" rotation="0 0 0" move>
+<!--Part1-->
+<a-cone id="Part1" position="0 1.5 0" color="red" radius-bottom="0.5" radius-top="0.1" > </a-cone>
+
+</a-cone>
+<!--Part2-->
+<a-cylinder id="Part2" position="0 -1 0" color="orange" radius="0.5" height="4" > </a-cylinder>
+<!--Part3-->
+<a-cylinder id="part3" position="0 -3 0" radius="0.5" color="blue" height="1.5" fall-down> 
+    <a-triangle position="-0.93 -0.95 -0.94" scale="0.5 0.5 1" color="blue" vertex-a="1 1 1" vertex-b="1 3 1" vertex-c="-1 1 1"></a-triangle> 
+    <a-triangle position="-0.11 -0.026 -0.94" rotation="0 0 270" scale="0.5 0.5 1" color="blue" vertex-a="1 1 1" vertex-b="1 3 1" vertex-c="-1 1 1"></a-triangle> 
+</cylinder>
+
+</a-entity>
+<a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 1000000"> 
+    <a-sphere position="0 -10 10" radius="10" src="https://cdn.glitch.com/850dd813-e5e9-4dd0-9751-38981ae74172%2Fearth.jpg?v=1604312404511"> </a-sphere> 
+</a-entity>
+
+    </a-scene>
+
+</body>
+</html>

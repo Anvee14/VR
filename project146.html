@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    </head>
+    <body >
+       
+        <a-scene background = "color:black">
+            <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to:0 360 0;easing:linear; loop: true; dur: 10000">
+            <a-sphere position="0 3.3 0" radius="0.8" color="red" ></a-sphere>
+            <a-entity position="0 2 0" geometry="primitive: circle; radius: 1; segments:6" material="side: double"></a-entity>
+            <a-box position="0 2 0" rotation="0 0 0" color="blue" scale="1 1.5 0.1"></a-box>
+            <a-sphere position="0 3.4 0.8" radius="0.3" color="black" width="2" height="3"></a-sphere>
+            <a-entity  rotation="0 0 80"position="2.4 2.2 -0.1" geometry="primitive: torus; radius:0.4 ; radiusTubular: 0.03; arc: 180"></a-entity>
+            <a-entity  rotation="0 0 -80"position="-2.4 2.2 -0.1" geometry="primitive: torus; radius:0.4 ; radiusTubular: 0.03; arc: 180"></a-entity>
+            <a-sphere position="0 1 0" position="0 0.8 0" radius="0.6" color="grey" ></a-sphere>
+            <a-box position="-1 2.2 -0.1" rotation="0 0 0" color="blue" scale="1 1 0" width="2" height="0.4"></a-box>           
+            <a-box position="1 2.2 -0.1" rotation="0 0 0" color="blue" scale="1 1 0" width="2" height="0.4"></a-box>
+            <a-sky color="black"></a-sky>
+        </a-entity>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+
+        </a-scene>
+
+    </body>
+</html>

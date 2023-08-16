@@ -1,0 +1,7 @@
+1. gLTF stands for Graphics Language Transmission Format.
+
+2. To store 3D models, the file formats used are .obj, .fbx, .gltf(or .glb) etc.
+
+3. A-Frame also has its assets management system, which helps to load all the assets like 3D models, image textures, video textures and audio before rendering anything in the scene.
+
+
